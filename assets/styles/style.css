@@ -168,13 +168,142 @@ body {
 
 /* ---------------------------------END SIDEBAR----------------------------------- */
 
+/* ----------------------------------HEADER--------------------------------------- */
+
 .header {
   grid-area: header;
-
-  background-color: cornflowerblue;
+  display: grid;
+  grid-template-columns: 5fr min-content 2fr;
 }
+
+.form-header__input {
+  width: 100%;
+  height: 100%;
+  margin-right: 20px;
+  padding-left: 60px;
+
+  border: none;
+  background-image: url(../icons/header/search.svg);
+  background-repeat: no-repeat;
+  background-position: 20px center;
+}
+
+.form-header__input:focus {
+  outline-style: none;
+}
+
+.header__line {
+  width: 1px;
+  height: 40px;
+  margin-top: 19px;
+
+  opacity: 0.2;
+  background: #07102f;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.header__icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-top: 24px;
+
+  border-radius: 100%;
+}
+
+.icon-left {
+  position: relative;
+  margin-left: 39px;
+
+  background-color: #5855d6;
+  background-image: url(../icons/header/circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.noticement1 {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 20%;
+  left: 60%;
+
+  border-radius: 100%;
+  background-color: #6fcf97;
+}
+
+.icon-right {
+  position: relative;
+  margin-left: 17px;
+  margin-right: 35px;
+
+  background-image: url(../icons/header/bell.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.noticement2 {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 20%;
+  left: 60%;
+
+  border-radius: 100%;
+  background-color: #e44545;
+}
+
+.header__img {
+  width: 40px;
+  height: 40px;
+  margin-top: 17px;
+  margin-right: 12px;
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 35px;
+  margin-top: 18px;
+
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.24px;
+  color: #0a043c;
+  white-space: nowrap;
+
+  opacity: 0.7;
+}
+
+.header__text span {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+  letter-spacing: 0.32px;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30%;
+  margin-top: 25px;
+}
+
+.header__menu span {
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #bebcbc;
+}
+
+/* ---------------------------------END HEADER------------------------------- */
+
 .main {
   grid-area: main;
 
-  background-color: darkgrey;
+  background-color: #f0eff5;
 }
