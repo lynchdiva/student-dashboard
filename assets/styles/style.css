@@ -1,0 +1,180 @@
+/* border: 1px solid white; */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: 10vh minmax(90vh, auto);
+  grid-template-columns: 240px 1fr;
+
+  grid-template-areas:
+    "aside header"
+    "aside main";
+}
+
+/* ----------------------------SIDEBAR---------------------------------------- */
+.aside {
+  grid-area: aside;
+  position: relative;
+
+  background-color: #333269;
+}
+
+.aside__icon-arrow {
+  position: absolute;
+  top: 16px;
+  left: 205px;
+
+  width: 28px;
+  height: 28px;
+
+  cursor: pointer;
+}
+
+.aside__logo {
+  width: 27px;
+  height: 36px;
+  margin: 48px 11.8px 2px 40px;
+  vertical-align: text-bottom;
+}
+
+.aside__title {
+  display: inline;
+
+  font-family: MuseoModerno;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.6px;
+
+  background: linear-gradient(
+    105deg,
+    rgba(255, 255, 255, 0.69) 4.5%,
+    rgba(222, 221, 255, 0.7) 77.86%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav {
+  margin-top: 64px;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 412px;
+  list-style: none;
+}
+
+.nav ul li a {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  color: #c0beff;
+
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  color: white;
+}
+
+.nav img {
+  margin-bottom: 3px;
+  margin-right: 14px;
+  vertical-align: text-bottom;
+}
+
+#dashboard {
+  width: 20px;
+  height: 20px;
+}
+
+#courses {
+  width: 21px;
+  height: 21px;
+}
+
+#materials,
+#calendar,
+#transcripts {
+  width: 18px;
+  height: 18px;
+}
+
+#grades {
+  width: 18px;
+  height: 18px;
+}
+
+#attendance {
+  width: 19px;
+  height: 19px;
+}
+
+#settings {
+  width: 18px;
+  height: 18px;
+}
+
+.aside__container {
+  width: 176px;
+  height: 190px;
+  margin: 101px auto 40px;
+
+  background-color: #24243a;
+  background-image: url(../images/mask.png);
+  background-position: bottom right;
+  border-radius: 20%;
+  background-repeat: no-repeat;
+}
+
+.box {
+  width: 124px;
+  height: 100px;
+  white-space: nowrap;
+}
+
+.box p {
+  padding-top: 60px;
+  padding-left: 21px;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.28px;
+  color: #fff;
+}
+
+.box p span {
+  font-weight: 400;
+}
+
+/* ---------------------------------END SIDEBAR----------------------------------- */
+
+.header {
+  grid-area: header;
+
+  background-color: cornflowerblue;
+}
+.main {
+  grid-area: main;
+
+  background-color: darkgrey;
+}
