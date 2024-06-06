@@ -22,7 +22,7 @@ body {
     "aside main";
 }
 
-/* ----------------------------SIDEBAR---------------------------------------- */
+/* -------------------------SIDEBAR--------------------------- */
 .aside {
   grid-area: aside;
   position: relative;
@@ -166,9 +166,9 @@ body {
   font-weight: 400;
 }
 
-/* ---------------------------------END SIDEBAR----------------------------------- */
+/* ------------------------END SIDEBAR------------------------- */
 
-/* ----------------------------------HEADER--------------------------------------- */
+/* -----------------------HEADER------------------------------- */
 
 .header {
   grid-area: header;
@@ -212,6 +212,7 @@ body {
   margin-top: 24px;
 
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .icon-left {
@@ -291,6 +292,8 @@ body {
   justify-content: space-around;
   height: 30%;
   margin-top: 25px;
+
+  cursor: pointer;
 }
 
 .header__menu span {
@@ -300,10 +303,104 @@ body {
   background-color: #bebcbc;
 }
 
-/* ---------------------------------END HEADER------------------------------- */
+/* -------------------------END HEADER------------------------- */
+
+/* ---------------------------MAIN---------------------------- */
 
 .main {
   grid-area: main;
 
   background-color: #f0eff5;
 }
+
+.section-start {
+  grid-area: greetings;
+}
+
+.section-start__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.section-start__wrapper p {
+  display: inline-block;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: normal;
+  color: #333269;
+}
+
+.section-start__wrapper img {
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+  vertical-align: text-bottom;
+}
+
+#hello {
+  padding-top: 47px;
+  margin: 0;
+}
+
+#customize {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  color: #5855d6;
+
+  cursor: pointer;
+}
+
+.main_container {
+  display: grid;
+  grid-template-rows: min-content minmax(305px, auto) minmax(363px, auto) 1fr;
+  grid-template-columns: 2fr 3fr 2fr;
+  gap: 20px;
+  min-height: 100%;
+  margin-left: 40px;
+  margin-right: 38px;
+
+  grid-template-areas:
+    "greetings greetings ."
+    "programs programs messaging"
+    "progress sessions messaging"
+    ". . messaging";
+}
+
+/* .main_container section {
+} */
+
+.section1 {
+  grid-area: programs;
+
+  border-radius: 20px;
+  background-color: #c0beff;
+}
+.section2 {
+  grid-area: progress;
+
+  border-radius: 20px;
+  background-color: #bfc7ab;
+}
+.section3 {
+  grid-area: sessions;
+
+  border-radius: 20px;
+  background-color: darkgoldenrod;
+}
+
+.section4 {
+  grid-area: messaging;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  background-color: lightskyblue;
+}
+
+/* -----------------------END MAIN---------------------------- */
