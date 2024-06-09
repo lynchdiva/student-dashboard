@@ -12,7 +12,7 @@ body {
 .container {
   display: grid;
   min-height: 100%;
-  grid-template-rows: minmax(10vh, auto) minmax(90vh, auto);
+  grid-template-rows: minmax(1vh, auto) minmax(99vh, auto);
   grid-template-columns: minmax(145px, 240px) 1fr;
 
   grid-template-areas:
@@ -497,7 +497,7 @@ body {
   display: flex;
   max-width: 234px;
   gap: 50px;
-  margin-left: 106px;
+  margin-left: auto;
 }
 
 .container-university__box3 div {
@@ -622,7 +622,7 @@ body {
   display: flex;
   max-width: 234px;
   gap: 50px;
-  margin-left: 132px;
+  margin-left: auto;
 }
 
 .container-academy__box3 div {
@@ -725,7 +725,6 @@ body {
   padding: 21px 20px;
   margin: 40px -10px 0;
   z-index: 1;
-  /* box-sizing: border-box; */
 
   border-radius: 10px;
   background-color: #fafaff;
