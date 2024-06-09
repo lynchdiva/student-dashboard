@@ -1029,7 +1029,7 @@ body {
   gap: 30.5px;
   align-items: flex-end;
 
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .stories__wrapper {
