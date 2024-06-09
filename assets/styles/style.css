@@ -184,6 +184,7 @@ body {
   background-image: url(../icons/header/search.svg);
   background-repeat: no-repeat;
   background-position: 20px center;
+  background-color: white;
 }
 
 .form-header__input:focus {
