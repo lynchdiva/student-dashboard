@@ -373,7 +373,7 @@ body {
   grid-template-rows: repeat(2, min-content minmax(104px, auto));
   padding: 20px 25px 15px 9px;
 
-  overflow: scroll;
+  overflow: auto;
 
   border-radius: 20px;
   background-color: white;
